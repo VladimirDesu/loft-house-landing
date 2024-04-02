@@ -1,0 +1,38 @@
+// .roboto-light {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// <uniquifier>: Use a unique and descriptive class name
+
+// .playfair-display-<uniquifier> {
+//   font-family: "Playfair Display", serif;
+//   font-optical-sizing: auto;
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+// .raleway-<uniquifier> {
+//   font-family: "Raleway", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+// }
+
+// fonts 
+$font-main: 'Raleway', sans-serif;
+$font-accent: 'Playfair Display', serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// colors
+
+$dark: #242B33;
+$accent: #D4C17F;
+$white: #fff;
+$footer-bg: #2D343C;
