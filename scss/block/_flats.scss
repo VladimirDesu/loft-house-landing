@@ -1,5 +1,6 @@
 .flats {
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "III";

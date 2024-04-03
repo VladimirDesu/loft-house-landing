@@ -392,6 +392,7 @@ h1 {
 
 .flats {
   position: relative;
+  overflow: hidden;
 }
 .flats::before {
   content: "III";
@@ -547,6 +548,7 @@ h1 {
 .video {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 .video::after {
   content: "IV";
@@ -589,8 +591,18 @@ h1 {
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
 }
+@media screen and (max-width: 959px) {
+  .video__icon {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
+}
+@media screen and (max-width: 959px) {
+  .video__link:hover .video__icon {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .section-map {
