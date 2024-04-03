@@ -609,6 +609,11 @@ h1 {
   padding: 180px 0;
   position: relative;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 90px 0;
+  }
+}
 .section-map::before {
   content: "V";
   right: calc(50% + 555px);

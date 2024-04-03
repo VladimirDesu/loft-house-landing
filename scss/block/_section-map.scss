@@ -5,6 +5,10 @@
 
   position: relative;
 
+  @include mediaTablet {
+    padding: 90px 0;
+  }
+
   &::before {
     content: "V";
 
@@ -13,6 +17,7 @@
     @include decorNumber;
     line-height: 1.9;
   }
+
 
   &__title {
     margin-bottom: 88px;
