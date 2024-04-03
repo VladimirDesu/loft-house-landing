@@ -484,10 +484,21 @@ h1 {
 .cta__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin-top: 17px;
+}
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 .cta__description {
   line-height: 1.5;
+}
+@media screen and (max-width: 959px) {
+  .cta__description {
+    font-size: 14px;
+  }
 }
 .cta__form {
   display: grid;
@@ -496,6 +507,11 @@ h1 {
   gap: 35px 30px;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .form__input {
