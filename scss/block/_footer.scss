@@ -1,0 +1,33 @@
+@import '../base/vars';
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 50px;
+
+  font-size: 14px;
+
+  background-color: $footer-bg;
+
+  &__logo {
+    margin-top: -12px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 0.05em;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 22px;
+    margin-top: 20px;
+  }
+}
