@@ -208,7 +208,20 @@ h1 {
 }
 
 .benefits {
+  position: relative;
   padding: 120px 0;
+}
+.benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0);
+  position: absolute;
+  top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-weight: bold;
+  line-height: 1.15;
+  opacity: 0.02;
 }
 .benefits__row {
   display: flex;
@@ -230,6 +243,22 @@ h1 {
   text-align: center;
 }
 
+.flats {
+  position: relative;
+}
+.flats::before {
+  content: "III";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0);
+  position: absolute;
+  top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-weight: bold;
+  line-height: 1.15;
+  opacity: 0.02;
+  top: -30px;
+}
 .flats__title {
   margin-bottom: 88px;
 }
@@ -340,6 +369,20 @@ h1 {
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0);
+  position: absolute;
+  top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-weight: bold;
+  line-height: 1.15;
+  opacity: 0.02;
+  line-height: 1.5;
 }
 .video__link {
   position: relative;
@@ -375,6 +418,20 @@ h1 {
 
 .section-map {
   padding: 180px 0;
+  position: relative;
+}
+.section-map::before {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0);
+  position: absolute;
+  top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-weight: bold;
+  line-height: 1.15;
+  opacity: 0.02;
+  line-height: 1.9;
 }
 .section-map__title {
   margin-bottom: 88px;
