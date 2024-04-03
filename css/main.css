@@ -141,6 +141,11 @@ h1 {
   font-size: 36px;
   color: #D4C17F;
 }
+@media screen and (max-width: 959px) {
+  .title-2 {
+    font-size: 28px;
+  }
+}
 
 .link-email {
   font-weight: bold;
@@ -660,13 +665,26 @@ h1 {
   font-size: 14px;
   background-color: #2D343C;
 }
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 42px;
+    padding-bottom: 20px;
+  }
+}
 .footer__logo {
   margin-top: -12px;
 }
 .footer__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   justify-content: space-between;
+}
+@media screen and (max-width: 959px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 38px;
+  }
 }
 .footer__nav-list {
   display: flex;

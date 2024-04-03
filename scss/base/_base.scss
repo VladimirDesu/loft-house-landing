@@ -60,6 +60,10 @@ h1 {
   font-family: $font-accent;
   font-size: 36px;
   color: $accent;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
 }
 
 .link-email {

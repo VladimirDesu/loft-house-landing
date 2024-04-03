@@ -8,6 +8,11 @@
 
   background-color: $footer-bg;
 
+  @include mediaTablet {
+    padding-top: 42px;
+    padding-bottom: 20px;
+  }
+
   &__logo {
     margin-top: -12px;
   }
@@ -15,7 +20,13 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
     justify-content: space-between;
+
+    @include mediaTablet {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 38px;
+    }
   }
 
   &__nav-list {
