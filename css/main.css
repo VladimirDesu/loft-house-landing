@@ -648,6 +648,11 @@ h1 {
   gap: 35px 30px;
   align-items: center;
 }
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
 
 .footer {
   padding-top: 72px;
