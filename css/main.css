@@ -132,6 +132,16 @@ h1 {
   white-space: nowrap;
 }
 
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #D4C17F;
+}
+
 .nav__list {
   display: flex;
   column-gap: 40px;
@@ -212,4 +222,147 @@ h1 {
   font-weight: 300;
   line-height: 1.35;
   text-align: center;
+}
+
+.flats__title {
+  margin-bottom: 88px;
+}
+.flats__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  color: #fff;
+}
+.card::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.card::after {
+  z-index: 2;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px double rgba(255, 255, 255, 0.4);
+  transition: opacity 0.2s ease-in;
+}
+.card:hover::after {
+  opacity: 1;
+}
+.card__title {
+  z-index: 4;
+  position: absolute;
+  bottom: 44px;
+  left: 50px;
+  font-size: 24px;
+}
+.card__img {
+  transition: transform 0.2s ease-in;
+}
+.card:hover .card__img {
+  transform: scale(1.1);
+}
+
+.cta {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../../img/cta/cta-bg.jpg), #c4c4c4;
+}
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 17px;
+}
+.cta__description {
+  line-height: 1.5;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__input {
+  height: 50px;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: border 0.2s ease-in;
+}
+.form__input::placeholder {
+  color: #BEBEBE;
+}
+.form__input:focus {
+  border: 1px solid #D4C17F;
+}
+.form__text {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.form__btn {
+  padding: 12px 20px;
+  height: 50px;
+  background-color: #D4C17F;
+  font-weight: bold;
+  transition: filter 0.2s ease-in;
+}
+.form__btn:hover {
+  filter: brightness(105%);
+}
+
+.video {
+  text-align: center;
+}
+.video__link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+}
+.video__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.8);
+  transition: background-color 0.2s ease-in;
+}
+.video__link:hover::before {
+  background: rgba(36, 43, 51, 0.7);
+}
+.video__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+.video__link:hover .video__icon {
+  transform: translate(-50%, -50%) scale(1.2);
 }/*# sourceMappingURL=main.css.map */

@@ -51,3 +51,13 @@ h1 {
 
   white-space: nowrap;
 }
+
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  font-family: $font-accent;
+  font-size: 36px;
+  color: $accent;
+}
